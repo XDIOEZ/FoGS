@@ -1,37 +1,81 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class BuildingItem : MonoBehaviour
 {
-    private Vector3 defaultPosition; // 结构块的默认位置
-    private bool isDisassembled = false; // 是否处于拆解状态
+    [Header("物品信息")]
+    public ItemData itemData;
+    [Header("微调参数")]
+    [Tooltip("影响当前块拆解距离的独立系数")]
+    public float disassembleMultiplier = 1f;
 
-    private void Start()
+    [Tooltip("额外的方向偏移，用于定制本块拆解方向")]
+    public Vector3 extraDisassembleDirection = Vector3.zero;
+
+    [Header("全局设置")]
+    [Tooltip("是否对拆解方向进行归一化处理（由 Manager 控制）")]
+    public bool normalizeDirection = true;
+
+    [Header("动画参数")]
+    [Tooltip("拆解/还原动画时长")]
+    public float animationDuration = 0.5f;
+
+    private Vector3 defaultPosition;
+    private Quaternion defaultRotation;
+    private Vector3 defaultScale;
+    private bool isDisassembled = false;
+
+    private void Awake()
     {
-        // 初始化时记录默认位置
+        // 记录初始状态
         defaultPosition = transform.position;
+        defaultRotation = transform.rotation;
+        defaultScale = transform.localScale;
     }
 
     /// <summary>
-    /// 为外部调用提供接口，负责控制物块的移动方向
+    /// 执行拆解动画
     /// </summary>
-    /// <param name="targetPosition">目标三维坐标</param>
-    public void MoveTo(Vector3 targetPosition)
+    public void Disassemble(Vector3 globalDirection, float globalAmount)
     {
-        transform.position = targetPosition;
-        isDisassembled = true; // 移动后标记为拆解状态
+        if (isDisassembled) return;
+
+        // 合并偏移方向
+        Vector3 combinedDir = globalDirection + extraDisassembleDirection;
+        if (normalizeDirection)
+            combinedDir = combinedDir.normalized;
+
+        // 目标位置 = 初始位置 + 方向向量 * 全局系数 * 本块系数
+        Vector3 targetPos = defaultPosition + combinedDir * (globalAmount * disassembleMultiplier);
+
+        // DOTween 平滑移动/旋转/缩放
+        transform.DOMove(targetPos, animationDuration).SetEase(Ease.InOutSine);
+        transform.DORotateQuaternion(defaultRotation, animationDuration).SetEase(Ease.InOutSine);
+        transform.DOScale(defaultScale, animationDuration).SetEase(Ease.InOutSine);
+
+        isDisassembled = true;
     }
 
     /// <summary>
-    /// 如果处于拆解状态，就将物块返回到结构的默认位置
+    /// 用动画把块送回初始状态
     /// </summary>
-    public void TurnBack()
+    public void Reassemble()
     {
-        if (isDisassembled)
-        {
-            MoveTo(defaultPosition);
-            isDisassembled = false; // 重置拆解状态
-        }
+        if (!isDisassembled) return;
+
+        transform.DOMove(defaultPosition, animationDuration).SetEase(Ease.InOutSine);
+        transform.DORotateQuaternion(defaultRotation, animationDuration).SetEase(Ease.InOutSine);
+        transform.DOScale(defaultScale, animationDuration)
+                 .SetEase(Ease.InOutSine)
+                 .OnComplete(() => isDisassembled = false);
     }
+}
+[System.Serializable]
+public class ItemData
+{
+    // 物品名称
+    public string name;
+    // 物品描述
+    [TextArea]
+    public string description;
 }
