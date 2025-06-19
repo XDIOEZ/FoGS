@@ -5,6 +5,21 @@ using UnityEngine;
 
 public class BuildingManager : MonoBehaviour
 {
+
+
+    public static BuildingManager Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     public enum DisassembleMode { 水平, 垂直, 爆炸 }
 
     // 新增状态枚举
@@ -175,6 +190,54 @@ public class BuildingManager : MonoBehaviour
                 // 没有则添加组件
                 child.gameObject.AddComponent<BuildingItem>();
             }
+
+            if (child.GetComponent<ItemShader>() == null)
+            {
+                // 没有则添加组件
+                child.gameObject.AddComponent<ItemShader>();
+            }
+
+            if(child.GetComponent<m_Outline>() == null)
+            {
+                child.gameObject.AddComponent<m_Outline>();
+            }
+
+            if (child.GetComponent<MeshCollider>() == null)
+            {
+                child.gameObject.AddComponent<MeshCollider>();
+            }
+        }
+    }
+
+    public void ShowOne(GameObject obj)
+    {
+        for (int i = 0; i < buildingItems.Count; i++)
+        {
+            if (buildingItems[i].gameObject == obj)
+            {
+                buildingItems[i].gameObject.SetActive(true);
+            }
+        }
+    }
+
+
+    public void ShowAll()
+    {
+        for (int i = 0; i < buildingItems.Count; i++)
+        {
+           
+            
+                buildingItems[i].gameObject.SetActive(true);
+            
+        }
+    }
+
+
+    public void HideAll()
+    {
+        for (int i = 0; i < buildingItems.Count; i++)
+        {
+            buildingItems[i].gameObject.SetActive(false);
         }
     }
 

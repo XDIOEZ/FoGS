@@ -6129,13 +6129,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c30827581724c49bc67549d50629d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disassembleAmount: 2
+  disassembleAmount: 5
   extraGlobalDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   currentMode: 0
   resetMode: 0
   disassembleDuration: 2
-  reassembleDuration: 0.1
+  reassembleDuration: 0.2
   "\u5B9A\u70B9\u8FD8\u539F\u65F6\u95F4\u95F4\u9694": 0.1
   referencePoint: {fileID: 3170851650964561750}
 --- !u!1 &2485475290630011298

@@ -30,13 +30,19 @@ public class BuildingItem : MonoBehaviour
     private Vector3 defaultScale;
     private bool isDisassembled = false;
 
-    private void Awake()
+    private MeshRenderer _MeshRender;
+
+    private void Start()
     {
         // 记录初始状态
         defaultPosition = transform.position;
         defaultRotation = transform.rotation;
         defaultScale = transform.localScale;
+
+        _MeshRender = GetComponent<MeshRenderer>();
         Debug.Log("000");
+        if (itemData.name == "")
+            itemData.name = gameObject.name;
     }
 
     [ContextMenu("询问AI")]
@@ -62,11 +68,6 @@ public class BuildingItem : MonoBehaviour
     }
 
 
-public void Start()
-    {
-        if (itemData.name == "")
-            itemData.name = gameObject.name;
-    }
 
     /// <summary>
     /// 执行拆解动画
