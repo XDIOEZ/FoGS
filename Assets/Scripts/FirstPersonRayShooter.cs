@@ -241,6 +241,7 @@ public class FirstPersonRayShooter : MonoBehaviour
         Vector3 moveDirection = transform.forward * vertical + transform.right * horizontal;
         moveDirection = moveDirection.normalized * moveSpeed;
 
+
         if (!isInFlightMode)
         {
             if (characterController.isGrounded)
@@ -259,6 +260,7 @@ public class FirstPersonRayShooter : MonoBehaviour
         }
 
         characterController.Move(moveDirection * Time.deltaTime);
+       
     }
 
     void HandleJump()

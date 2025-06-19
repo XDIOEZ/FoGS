@@ -9,6 +9,8 @@ TagManager:
   - ScreenCamera
   - cockpit_capitalLaser
   - AIChat
+  - Interactable
+  - ObjectUIPanel
   layers:
   - Default
   - TransparentFX
