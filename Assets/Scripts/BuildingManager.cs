@@ -1,80 +1,143 @@
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class BuildingManager : MonoBehaviour
 {
     public enum DisassembleMode { 水平, 垂直, 爆炸 }
 
+    // 新增状态枚举
+    private enum BuildingState { 空闲, 拆解中, 还原中 }
+
     [Header("拆解设置")]
-    [Tooltip("全局拆解距离系数")]
     public float disassembleAmount = 1f;
-
-    [Tooltip("全局额外方向偏移，用于整体结构块的附加移动方向")]
     public Vector3 extraGlobalDirection = Vector3.zero;
-
-    [Tooltip("是否对拆解方向进行归一化处理")]
     public bool normalizeDirection = true;
-
-    [Tooltip("拆解模式")]
     public DisassembleMode currentMode = DisassembleMode.水平;
 
-    [Tooltip("拆解/还原时的动画时长（会覆盖各 BuildingItem 的默认值）")]
-    public float animationDuration = 0.5f;
+    public enum ResetMode { 直接, 抛物线 }
 
-    [Tooltip("参考中心点（为空则以本物体中心为准）")]
+    public ResetMode resetMode = ResetMode.直接;
+    [Header("动画时长设置")]
+    public float disassembleDuration = 0.1f;
+    public float reassembleDuration = 0.1f;
+    public float 定点还原时间间隔 = 0.1f;
+
     public Transform referencePoint;
 
     private List<BuildingItem> buildingItems = new List<BuildingItem>();
 
+    // 当前状态
+    private BuildingState currentState = BuildingState.空闲;
+
     private void Start()
     {
-        // 拉取所有子物块
         buildingItems.AddRange(GetComponentsInChildren<BuildingItem>());
     }
 
-    /// <summary>
-    /// 一次性触发拆解
-    /// </summary>
+    [ContextMenu("拆解")]
     public void DisassembleBuilding()
     {
+        if (currentState != BuildingState.空闲)
+        {
+            Debug.LogWarning("当前正在进行还原或拆解，无法再次拆解！");
+            return;
+        }
+
+        currentState = BuildingState.拆解中;
+
         Vector3 center = referencePoint != null
                        ? referencePoint.position
                        : transform.position;
 
         foreach (var item in buildingItems)
         {
-            // 同步动画时长和归一化设置
-            item.animationDuration = animationDuration;
+            item.animationDuration = disassembleDuration;
             item.normalizeDirection = normalizeDirection;
 
-            // 计算基础方向向量
             Vector3 dir = GetDirection(item.transform.position, center);
-
-            // 合成全局额外偏移
             Vector3 combinedDir = dir + extraGlobalDirection;
 
-            // 调用拆解
             item.Disassemble(combinedDir, disassembleAmount);
         }
+
+        // 设定一个定时器，在拆解动画结束后自动切回空闲状态
+        StartCoroutine(ResetStateAfterDelay(disassembleDuration));
     }
 
-    /// <summary>
-    /// 一次性触发还原
-    /// </summary>
+    [ContextMenu("还原")]
     public void ReassembleBuilding()
+    {
+        if (currentState != BuildingState.空闲)
+        {
+            Debug.LogWarning("当前正在进行还原或拆解，无法再次还原！");
+            return;
+        }
+
+        currentState = BuildingState.还原中;
+
+        float time = 0f;
+        foreach (var item in buildingItems)
+        {
+            item.animationDuration = reassembleDuration;
+            item.normalizeDirection = normalizeDirection;
+            item.Reassemble(time += 0.02f);
+        }
+
+        StartCoroutine(ResetStateAfterDelay(reassembleDuration + time));
+    }
+
+    // 其他还原协程也需要类似处理
+    [ContextMenu("定点还原")]
+    public void ReassembleBuildingFixedPoint()
+    {
+        if (currentState != BuildingState.空闲)
+        {
+            Debug.LogWarning("当前正在进行还原或拆解，无法再次还原！");
+            return;
+        }
+
+        currentState = BuildingState.还原中;
+
+        StopAllCoroutines();
+
+        buildingItems = buildingItems.OrderBy(item => item.transform.position.y).ToList();
+
+
+        StartCoroutine(ReassembleStepByStepWithState());
+    }
+
+    private IEnumerator ReassembleStepByStepWithState()
     {
         foreach (var item in buildingItems)
         {
-            item.animationDuration = animationDuration;
+            item.animationDuration = reassembleDuration;
             item.normalizeDirection = normalizeDirection;
-            item.Reassemble();
+          
+
+            if (resetMode == ResetMode.抛物线)
+            {
+                item.ReassembleWithArc(reassembleDuration);
+            }
+            else if (resetMode == ResetMode.直接)
+            {
+                item.Reassemble(reassembleDuration);
+
+            }
+
+            yield return new WaitForSeconds(定点还原时间间隔);
         }
+
+        currentState = BuildingState.空闲;
     }
 
-    /// <summary>
-    /// 根据拆解模式计算拆解方向
-    /// 水平: XY面疏散, 垂直: 按Y轴拉伸, 爆炸: 全向散开
-    /// </summary>
+    private IEnumerator ResetStateAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        currentState = BuildingState.空闲;
+    }
+
     private Vector3 GetDirection(Vector3 itemPos, Vector3 center)
     {
         switch (currentMode)
@@ -84,7 +147,6 @@ public class BuildingManager : MonoBehaviour
                 dirH.y = 0;
                 return dirH;
             case DisassembleMode.垂直:
-                // 垂直拉伸：根据与中心的Y差值拉伸方向
                 float deltaY = itemPos.y - center.y;
                 return new Vector3(0, deltaY, 0);
             case DisassembleMode.爆炸:
@@ -93,11 +155,4 @@ public class BuildingManager : MonoBehaviour
                 return Vector3.zero;
         }
     }
-
-    // --- Inspector 右键测试 ---
-    [ContextMenu("拆解")]
-    private void TestDisassemble() => DisassembleBuilding();
-
-    [ContextMenu("还原")]
-    private void TestReassemble() => ReassembleBuilding();
 }

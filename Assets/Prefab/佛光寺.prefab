@@ -128,6 +128,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3812368795870274389
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -387,6 +388,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6097947656625382445
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -646,6 +648,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4304914217257234801
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -905,6 +908,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2651519248870551870
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1164,6 +1168,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6727337764558045657
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1423,6 +1428,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &1894827359959243477
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1682,6 +1688,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7133824552424077443
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1941,6 +1948,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7854919787205310691
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2200,6 +2208,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &1663636287387533422
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2459,6 +2468,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5520300902214911134
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2718,6 +2728,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &1406566972242041221
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2977,6 +2988,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7153628980950847416
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3236,6 +3248,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!120 &4934389249520177685
 LineRenderer:
   serializedVersion: 2
@@ -3468,6 +3481,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &375275258201184148
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3727,6 +3741,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4185275127446532999
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3986,6 +4001,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!120 &6108552683398458888
 LineRenderer:
   serializedVersion: 2
@@ -4218,6 +4234,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6574673614819533162
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4477,6 +4494,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8354536358562026297
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4736,6 +4754,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5797593493303245601
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4995,6 +5014,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4686148121644757696
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5254,6 +5274,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6063007466008902004
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5513,6 +5534,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2095416649814767900
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5772,6 +5794,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5651300089305128020
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6031,6 +6054,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &1067246866451592549
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6290,6 +6314,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &204416163599568498
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6549,6 +6574,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &1750777329719271538
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6808,6 +6834,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5547751392002859145
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7067,6 +7094,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8650558473610732937
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7326,6 +7354,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7304416413592441412
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7585,6 +7614,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &1409337335067430498
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7844,6 +7874,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7103976065876410048
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8103,6 +8134,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3149971084392714461
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8362,6 +8394,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4644245893683698974
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8621,6 +8654,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2588802595308318662
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8880,6 +8914,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &9132434607852924328
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9139,6 +9174,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4954895858319482160
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9398,6 +9434,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6423303180833044815
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9657,6 +9694,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &782825977734404653
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9975,6 +10013,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &9149653065052479038
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10234,6 +10273,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8830845288383253650
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10493,6 +10533,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6351114488829641267
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10752,6 +10793,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6487292287160551981
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11011,6 +11053,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4745691391788643038
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11270,6 +11313,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5200506845838781263
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11529,6 +11573,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8935211562056779225
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11842,6 +11887,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8548230624071804615
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12101,6 +12147,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8524710904957396393
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12360,6 +12407,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4131060480620318564
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12619,6 +12667,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2966881467210729233
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12878,6 +12927,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &1353099792674326199
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13137,6 +13187,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3788096482207443165
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13396,6 +13447,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7613710986571055193
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13655,6 +13707,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4555038293581015506
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13914,6 +13967,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4160502215968752550
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14173,6 +14227,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6451605128895635367
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14432,6 +14487,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6356562802990087254
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14691,6 +14747,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8199929993836295747
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14950,6 +15007,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4564455605948577750
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15209,6 +15267,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5210769204057876754
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15468,6 +15527,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6358601299830144011
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15727,6 +15787,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3926578208722975331
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15986,6 +16047,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5930703046497116889
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16245,6 +16307,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &512419525628650979
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16504,6 +16567,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5952988336774598957
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16763,6 +16827,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3533191113393258485
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17022,6 +17087,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3571398467969525008
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17281,6 +17347,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5514924964523705933
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17540,6 +17607,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4072602584288938956
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17799,6 +17867,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4730749806708583135
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18058,6 +18127,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &993271335660736014
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18317,6 +18387,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3173625456303085746
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18576,6 +18647,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &333223598740982472
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18835,6 +18907,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8770991420764528317
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19094,6 +19167,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7465377107167143291
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19353,6 +19427,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3201818081691171784
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19612,6 +19687,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6789108862242564714
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19871,6 +19947,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4390412372365953891
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20130,6 +20207,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &1813183526497061974
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20389,6 +20467,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6234298296170714381
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20648,6 +20727,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5215212577680364507
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20907,6 +20987,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2090207310134854337
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21166,6 +21247,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4252822142037353232
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21425,6 +21507,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &53335429658949626
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21684,6 +21767,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &9168005415162068242
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22077,6 +22161,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8845199836067603186
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22336,6 +22421,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2532347055031927854
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22595,6 +22681,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6701639854744765115
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22854,6 +22941,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4526693481195457516
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23113,6 +23201,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!120 &167948549874379510
 LineRenderer:
   serializedVersion: 2
@@ -23345,6 +23434,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &1735067702286854539
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23604,6 +23694,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6796751473164801654
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23863,6 +23954,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &1613496206161162837
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24122,6 +24214,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2843208391164243195
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24381,6 +24474,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!120 &4223665697634293049
 LineRenderer:
   serializedVersion: 2
@@ -24613,6 +24707,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8759332412814750802
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24872,6 +24967,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8053057015349260540
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25131,6 +25227,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3684178532934790695
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25390,6 +25487,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6031554258890839699
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25649,6 +25747,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5662787517447891630
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25908,6 +26007,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2388534007673967317
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26167,6 +26267,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5678320138228899111
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26426,6 +26527,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4619097622825507102
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26685,6 +26787,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!120 &6062253754467473230
 LineRenderer:
   serializedVersion: 2
@@ -26917,6 +27020,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3177281848094085138
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27176,6 +27280,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6465765277412227026
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27435,6 +27540,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!120 &8470537317961467391
 LineRenderer:
   serializedVersion: 2
@@ -27667,6 +27773,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4034723096528479117
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27981,6 +28088,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7715908635043278947
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28240,6 +28348,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2628508348095623520
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28499,6 +28608,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3850664281114151055
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28758,6 +28868,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3963861689415091870
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29017,6 +29128,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7133732396365920483
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29276,6 +29388,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4724271861670092262
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29535,6 +29648,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7888515489212194269
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29794,6 +29908,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7477470552923691376
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30053,6 +30168,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &1606183059040014204
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30312,6 +30428,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2054088652421858447
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30571,6 +30688,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5680006039879759011
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30830,6 +30948,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8953719834483230532
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31089,6 +31208,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &609318029480084009
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31348,6 +31468,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &847206280504932446
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31607,6 +31728,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &9011108850668442989
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31866,6 +31988,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7199770134633510762
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32125,6 +32248,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6997978528792210057
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32439,6 +32563,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5082265003420037329
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32698,6 +32823,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7744496870203893270
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32957,6 +33083,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2695391376128589456
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33216,6 +33343,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8357171723836640310
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33475,6 +33603,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!120 &6791242628625248042
 LineRenderer:
   serializedVersion: 2
@@ -33707,6 +33836,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &9106367887769589479
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33966,6 +34096,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!120 &7200051256367807519
 LineRenderer:
   serializedVersion: 2
@@ -34198,6 +34329,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8482019258676208200
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34457,6 +34589,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &691338567924203695
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34716,6 +34849,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &1645588553450339657
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34975,6 +35109,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8223525022890508465
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35234,6 +35369,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2864508139598998441
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35493,6 +35629,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4242621297703739748
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35752,6 +35889,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3744398235368052148
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36011,6 +36149,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6521472800859056544
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36270,6 +36409,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8081366605114949934
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36529,6 +36669,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2258481566722334401
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36788,6 +36929,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3701748203877431584
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37047,6 +37189,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7124871437731470354
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37306,6 +37449,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5401888973309497128
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37565,6 +37709,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6416538438776287987
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37824,6 +37969,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8156737790430868150
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38083,6 +38229,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!120 &873010273601473615
 LineRenderer:
   serializedVersion: 2
@@ -38315,6 +38462,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2095577097329405207
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38574,6 +38722,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5398347769555335631
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38833,6 +38982,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2034414790596591305
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39092,6 +39242,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2895007478670042369
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39351,6 +39502,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6698258411257180870
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39610,6 +39762,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7590193592175713152
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39869,6 +40022,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5311822248337976695
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -40128,6 +40282,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4600783210793973138
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -40387,6 +40542,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &229449023752411933
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -40646,6 +40802,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &1485116970932031181
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -40905,6 +41062,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4553146357469869945
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -41164,6 +41322,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4840542585547516377
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -41423,6 +41582,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2503006793697915515
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -41682,6 +41842,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8114169391453489798
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -41941,6 +42102,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &538596827827152772
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -42200,6 +42362,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4171079939902250972
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -42459,6 +42622,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4336701061250422216
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -42718,6 +42882,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2987852502008602939
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -42977,6 +43142,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5039470079107615716
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -43236,6 +43402,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6088746367101214668
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -43495,6 +43662,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8005830929548613226
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -43753,6 +43921,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6637053880488865058
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -43908,6 +44077,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2558013579599238365
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -44167,6 +44337,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &983912983650329025
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -44426,6 +44597,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5196924104514809594
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -44685,6 +44857,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &1129084622454714428
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -44944,6 +45117,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &1244687929662709503
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -45203,6 +45377,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7280500759515154981
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -45462,6 +45637,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3237318437147783830
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -45721,6 +45897,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6237638182975511322
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -45980,6 +46157,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8380021636378091570
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -46239,6 +46417,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &1540905755927686617
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -46498,6 +46677,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2203030607096854676
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -46757,6 +46937,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &115330014485828672
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -47016,6 +47197,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4694157419882046163
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -47275,6 +47457,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8453793298447588185
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -47534,6 +47717,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4787171453642221396
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -47793,6 +47977,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8799203532081836878
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -48052,6 +48237,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3943265699961084110
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -48311,6 +48497,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3605782887459506460
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -48570,6 +48757,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5258240930179584462
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -48829,6 +49017,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4640096903207513343
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -49088,6 +49277,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5247293851810143495
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -49347,6 +49537,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2171122170387624771
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -49606,6 +49797,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7564231824687631126
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -49865,6 +50057,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5616393347324135744
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -50124,6 +50317,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7206788563223970144
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -50383,6 +50577,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2070069956089231622
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -50642,6 +50837,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8957666372784708408
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -50901,6 +51097,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8508133739019678885
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -51160,6 +51357,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &730696783627471684
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -51419,6 +51617,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &224439386768301480
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -51678,6 +51877,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4442133700349587351
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -51937,6 +52137,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7899375072099440612
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -52196,6 +52397,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8630197578528189348
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -52455,6 +52657,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8640033900719666881
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -52714,6 +52917,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8575310253833655512
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -52973,6 +53177,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4691284432689914013
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -53232,6 +53437,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6427649174848858244
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -53491,6 +53697,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4921063180869918812
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -53750,6 +53957,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &6464857293165288772
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -54009,6 +54217,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &162542502918145350
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -54268,6 +54477,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &5122173090531739175
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -54527,6 +54737,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2853141187291531946
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -54786,6 +54997,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &8532562521366106582
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -55045,6 +55257,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4227391256424877189
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -55304,6 +55517,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7194405803409474516
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -55563,6 +55777,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &325330880918986874
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -55822,6 +56037,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &409534530821679307
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -56081,6 +56297,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &2258887363866437995
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -56469,7 +56686,10 @@ MonoBehaviour:
   extraGlobalDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 0
   currentMode: 0
-  animationDuration: 0.5
+  resetMode: 0
+  disassembleDuration: 2
+  reassembleDuration: 0.3
+  "\u5B9A\u70B9\u8FD8\u539F\u65F6\u95F4\u95F4\u9694": 0.1
   referencePoint: {fileID: 0}
 --- !u!1 &9095233884742136414
 GameObject:
@@ -56599,6 +56819,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &3568541338322578865
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -56858,6 +57079,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!120 &1302692174517999377
 LineRenderer:
   serializedVersion: 2
@@ -57090,6 +57312,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &4131721983739055043
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -57349,6 +57572,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &1517553196786879469
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -57608,6 +57832,7 @@ MonoBehaviour:
   extraDisassembleDirection: {x: 0, y: 0, z: 0}
   normalizeDirection: 1
   animationDuration: 0.5
+  reassembleArcHeight: 2
 --- !u!54 &7264047243756713391
 Rigidbody:
   m_ObjectHideFlags: 0

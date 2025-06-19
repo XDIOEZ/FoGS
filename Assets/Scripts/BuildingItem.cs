@@ -20,6 +20,11 @@ public class BuildingItem : MonoBehaviour
     [Tooltip("拆解/还原动画时长")]
     public float animationDuration = 0.5f;
 
+
+    [Header("抛物线参数")]
+    [Tooltip("抛物线高度")]
+    public float reassembleArcHeight = 2f;
+
     private Vector3 defaultPosition;
     private Quaternion defaultRotation;
     private Vector3 defaultScale;
@@ -89,8 +94,13 @@ public void Start()
     /// <summary>
     /// 用动画把块送回初始状态
     /// </summary>
-    public void Reassemble()
+    public void Reassemble(float animationDuration)
     {
+        if(animationDuration == 0)
+        {
+            animationDuration = this.animationDuration;
+        }
+
         if (!isDisassembled) return;
 
         transform.DOMove(defaultPosition, animationDuration).SetEase(Ease.InOutSine);
@@ -99,6 +109,38 @@ public void Start()
                  .SetEase(Ease.InOutSine)
                  .OnComplete(() => isDisassembled = false);
     }
+
+    /// <summary>
+    /// 抛物线还原（带弧度更生动）
+    /// </summary>
+    public void ReassembleWithArc(float animationDuration)
+    {
+        if (animationDuration == 0)
+        {
+            animationDuration = this.animationDuration;
+        }
+
+        if (!isDisassembled) return;
+
+        Vector3 startPos = transform.position;
+        Vector3 endPos = defaultPosition;
+
+        // 计算中点高度，增加弧度
+        Vector3 peakPos = (startPos + endPos) / 2f + Vector3.up * reassembleArcHeight;
+
+        // 抛物线路径
+        Vector3[] path = new Vector3[] { startPos, peakPos, endPos };
+
+        // DOTween 路径动画
+        transform.DOPath(path, animationDuration, PathType.CatmullRom)
+                 .SetEase(Ease.InOutSine)
+                 .OnComplete(() => isDisassembled = false);
+
+        // 同时还原旋转和缩放
+        transform.DORotateQuaternion(defaultRotation, animationDuration).SetEase(Ease.InOutSine);
+        transform.DOScale(defaultScale, animationDuration).SetEase(Ease.InOutSine);
+    }
+
 }
 [System.Serializable]
 public class ItemData
