@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,16 +15,10 @@ public class SliderController : MonoBehaviour
         拆解时间,   // 控制 extraGlobalDirection.x
         还原时间    // 控制 extraGlobalDirection.y
     }
-
+    
     public ControlType controlType;
     private void Start()
     {
-
-        if (buildingManager == null)
-        {
-            buildingManager = FindObjectOfType<BuildingManager>();
-        }
-
         if (mySlider == null || buildingManager == null)
         {
             Debug.LogError("Slider 或 BuildingManager 未赋值！");
