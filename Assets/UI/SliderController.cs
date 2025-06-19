@@ -18,6 +18,12 @@ public class SliderController : MonoBehaviour
     public ControlType controlType;
     private void Start()
     {
+
+        if (buildingManager == null)
+        {
+            buildingManager = FindObjectOfType<BuildingManager>();
+        }
+
         if (mySlider == null || buildingManager == null)
         {
             Debug.LogError("Slider »ò BuildingManager Î´¸³Öµ£¡");

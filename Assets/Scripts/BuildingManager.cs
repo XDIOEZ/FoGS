@@ -206,6 +206,11 @@ public class BuildingManager : MonoBehaviour
             {
                 child.gameObject.AddComponent<MeshCollider>();
             }
+
+            if (child.GetComponent<ShowItemInfo>() == null)
+            {
+                child.gameObject.AddComponent<ShowItemInfo>();
+            }
         }
     }
 

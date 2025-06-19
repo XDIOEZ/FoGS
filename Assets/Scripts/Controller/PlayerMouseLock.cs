@@ -6,11 +6,24 @@ using System.Collections.Generic;
 public class PlayerMouseLock : MonoBehaviour
 {
     public GraphicRaycaster raycaster;
+    public static PlayerMouseLock instance;
     public EventSystem eventSystem;
     public static bool IsLocked { get; private set; } = true;
 
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     void Start()
     {
+
         UnlockCursor();
     }
 
@@ -29,14 +42,14 @@ public class PlayerMouseLock : MonoBehaviour
         }*/
     }
 
-    void LockCursor()
+    public void LockCursor()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         IsLocked = true;
     }
 
-    void UnlockCursor()
+    public void UnlockCursor()
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
