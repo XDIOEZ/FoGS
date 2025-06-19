@@ -155,4 +155,27 @@ public class BuildingManager : MonoBehaviour
                 return Vector3.zero;
         }
     }
+
+
+    // 初始化子对象上的组件
+    [ContextMenu("初始化子对象组件")]
+    public void ItemComponentInit()
+    {
+        // 获取所有子对象的 Transform
+        Transform[] allChildren = GetComponentsInChildren<Transform>();
+
+        foreach (Transform child in allChildren)
+        {
+            // 排除自身
+            if (child == transform) continue;
+
+            // 检测是否已有 BuildingItem 组件
+            if (child.GetComponent<BuildingItem>() == null)
+            {
+                // 没有则添加组件
+                child.gameObject.AddComponent<BuildingItem>();
+            }
+        }
+    }
+
 }
