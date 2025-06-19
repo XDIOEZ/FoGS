@@ -2,7 +2,7 @@
 - Project name: FoGS
 - Unity version: Unity 2022.3.51f1c1
 - Active game object:
-  - Name: Welcome
-  - Tag: Untagged
+  - Name: GameObject
+  - Tag: AIChat
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

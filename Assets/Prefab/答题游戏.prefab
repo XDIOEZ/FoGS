@@ -130,7 +130,7 @@ MonoBehaviour:
   ThirdButton: {fileID: 9151122403521646634}
   NextButton: {fileID: 7373638670736501835}
   ReferenceParent: {fileID: 0}
-  ShowMeshFilter: {fileID: 7412069708485990528}
+  ShowContainer: {fileID: 8862478063905037432}
   ScoreText: {fileID: 5235522061463269568}
   ShowAnswerDelay: 1.5
   DefaultColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1008,9 +1008,8 @@ GameObject:
   - component: {fileID: 8862478063905037432}
   - component: {fileID: 7412069708485990528}
   - component: {fileID: 2022892626995277382}
-  - component: {fileID: 7179848040163712172}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: ShowPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1081,29 +1080,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7179848040163712172
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8294825065256830343}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9073856823279090372
 GameObject:
   m_ObjectHideFlags: 0
