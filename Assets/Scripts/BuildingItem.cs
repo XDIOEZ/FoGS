@@ -48,23 +48,14 @@ public class BuildingItem : MonoBehaviour
     [ContextMenu("询问AI")]
     public void AskAI()
     {
-       
-        // 通过 Tag 获取标记为 "AISample" 的 GameObject
-        GameObject aiSample = GameObject.FindGameObjectWithTag("AIChat");
-      
-        if (aiSample != null)
-        {
-            Debug.Log("找到 AISample： " + aiSample.name);
+
+
             // 你可以在这里对这个 GameObject 做进一步操作，例如调用它的某个方法
-            aiSample.GetComponent<PreInput>().Show();
-            aiSample.GetComponent<PreInput>().inputString = itemData.name+ " 是什么?";
-            aiSample.GetComponent<PreInput>().SyncInput();
-            aiSample.GetComponent<PreInput>().SendMessage();
-        }
-        else
-        {
-            Debug.LogWarning("未找到 Tag 为 AISample 的对象");
-        }
+            PreInput.instance.Show();
+            PreInput.instance.inputString = itemData.name+ " 是什么?";
+            PreInput.instance.SyncInput();
+            PreInput.instance.SendMessage();
+    
     }
 
 

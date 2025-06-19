@@ -103,31 +103,45 @@ public class Test_Game : MonoBehaviour
         // 销毁上一次实例
         ClearCurrentDisplay();
 
-        // 实例化：将选中的对象复制一份，作为 ShowContainer 的子对象
         GameObject prefabOrSceneObj = GameObject_List[answerIndex];
-        // 注意：如果它是场景中的物体，Instantiate 会复制当前状态；如果想用预制件，建议提前把引用列表换成 Prefab 列表。
+
+        // 实例化：将选中的对象复制一份，作为 ShowContainer 的子对象
         currentDisplayObject = Instantiate(prefabOrSceneObj, ShowContainer);
 
-        // 重置 transform（局部坐标、旋转、缩放），可根据需要调整：
+        // 重置 Transform
         currentDisplayObject.transform.localPosition = Vector3.zero;
         currentDisplayObject.transform.localRotation = Quaternion.identity;
         currentDisplayObject.transform.localScale = Vector3.one;
 
-        // 如果想给显示对象添加一些效果或移动到指定位置，可再做调整。
-        // 例如：让它稍微放大一点：
-        // currentDisplayObject.transform.localScale = Vector3.one * 1.2f;
-
-        // 如果想记录默认材质颜色以备后续还原，可以遍历并缓存：
-        // 例如：Dictionary<Renderer, Color> defaultColors = ...
-        // 这里只是演示，如后续需要再加缓存逻辑。
-
-        // Optionally，可以给显示对象改成半透明或别的初始化外观：
-        // var renderers = currentDisplayObject.GetComponentsInChildren<MeshRenderer>();
-        // foreach (var rend in renderers) {
-        //     Color c = rend.material.color;
-        //     rend.material.color = new Color(c.r, c.g, c.b, 0.8f);
-        // }
+        // 自动居中调整
+        CenterMesh(currentDisplayObject);
     }
+
+    /// <summary>
+    /// 静态展示用：运行时动态调整 Mesh 轴心居中
+    /// </summary>
+    void CenterMesh(GameObject obj)
+    {
+        Renderer[] renderers = obj.GetComponentsInChildren<Renderer>();
+
+        if (renderers.Length == 0)
+        {
+            Debug.LogWarning("目标对象没有渲染组件，无法计算中心点。");
+            return;
+        }
+
+        Bounds bounds = renderers[0].bounds;
+        for (int i = 1; i < renderers.Length; i++)
+        {
+            bounds.Encapsulate(renderers[i].bounds);
+        }
+
+        Vector3 meshCenter = bounds.center;
+        Vector3 offset = obj.transform.position - meshCenter;
+
+        obj.transform.position += offset;
+    }
+
 
     void ClearCurrentDisplay()
     {
@@ -211,7 +225,7 @@ public class Test_Game : MonoBehaviour
     // 若要显示错选的实例，需要提前也实例化所有三个？或者只高亮正确实例即可。
     // 这里只演示高亮当前实例（正确答案）。
     void HighlightDisplayObject(int idx, Color color)
-    {
+    {/*
         // 如果要高亮错误选项的场景对象，一般需要提前把三选项都实例化到场景里，但通常只显示正确答案即可。
         if (idx == answerIndex && currentDisplayObject != null)
         {
@@ -221,6 +235,6 @@ public class Test_Game : MonoBehaviour
                 // 使用 rend.material 会实例化材质副本，不影响原资源
                 rend.material.color = color;
             }
-        }
+        }*/
     }
 }

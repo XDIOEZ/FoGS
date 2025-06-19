@@ -6,9 +6,16 @@ using UnityEngine.UI;
 
 public class PreInput : MonoBehaviour
 {
+
+    public static PreInput instance;
     public InputField inputText;
     public String inputString;
     public ChatSample chatSample;
+
+    public void Awake()
+    {
+        instance = this;
+    }
 
     [ContextMenu("œ‘ æ")]
     public void Show()
@@ -33,4 +40,5 @@ public class PreInput : MonoBehaviour
     {
         chatSample.SendData();
     }
+
 }
