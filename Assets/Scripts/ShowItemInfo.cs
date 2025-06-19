@@ -10,6 +10,6 @@ public class ShowItemInfo : MonoBehaviour
         //ÏÔÊ¾AI¶Ô»°¿ò
         ItemInfoPlane.instance.Show();
         ItemInfoPlane.instance.SetBuildingItem(gameObject.GetComponent<BuildingItem>());
-
+        PlayerMouseLock.instance.UnlockCursor();
     }
 }

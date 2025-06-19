@@ -77,20 +77,41 @@ public class Test_Game : MonoBehaviour
             MeshFilters = GameObject_List.Select(x => x.GetComponent<MeshFilter>()).ToArray();
 
             // 检查是否全部有 MeshFilter
-            validSelection = MeshFilters.All(x => x != null);
+            bool allHaveMeshFilter = MeshFilters.All(x => x != null);
 
-            if (!validSelection)
+            // 检查是否有重名
+            bool hasDuplicateName = GameObject_List.GroupBy(x => x.name).Any(g => g.Count() > 1);
+
+            // 检查是否有包含 "?" 的对象
+            bool hasInvalidName = GameObject_List.Any(x => x.name.Contains("?"));
+
+            if (!allHaveMeshFilter)
             {
                 Debug.LogWarning("检测到选中的对象中有未挂载 MeshFilter，重新随机选择...");
+                continue; // 重新随机
             }
+
+            if (hasDuplicateName)
+            {
+                Debug.LogWarning("检测到选中的对象中有重名，重新随机选择...");
+                continue; // 重新随机
+            }
+
+            if (hasInvalidName)
+            {
+                Debug.LogWarning("检测到选中的对象名称中包含非法字符 '?', 重新随机选择...");
+                continue; // 重新随机
+            }
+
+            validSelection = true; // 条件全部满足才结束
         }
 
         answerIndex = Random.Range(0, MeshFilters.Length);
         Debug.Log($"正确答案是：{GameObject_List[answerIndex].name}");
 
-        // 不再直接给 ShowMeshFilter.mesh 赋值，而是实例化选中对象：
         InstantiateSelectedObject();
     }
+
 
     void InstantiateSelectedObject()
     {
