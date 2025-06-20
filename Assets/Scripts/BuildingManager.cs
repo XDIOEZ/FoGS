@@ -23,7 +23,7 @@ public class BuildingManager : MonoBehaviour
     public enum DisassembleMode { 水平, 垂直, 爆炸 }
 
     // 新增状态枚举
-    private enum BuildingState { 空闲, 拆解中, 还原中 }
+    public enum BuildingState { 空闲, 拆解中, 还原中 }
 
     [Header("拆解设置")]
     public float disassembleAmount = 1f;
@@ -44,7 +44,7 @@ public class BuildingManager : MonoBehaviour
     private List<BuildingItem> buildingItems = new List<BuildingItem>();
 
     // 当前状态
-    private BuildingState currentState = BuildingState.空闲;
+    public static BuildingState currentState = BuildingState.空闲;
 
     private void Start()
     {

@@ -90,7 +90,6 @@ GameObject:
   - component: {fileID: 4603752296334534655}
   - component: {fileID: 7744730681526043753}
   - component: {fileID: 4030118552572578666}
-  - component: {fileID: 1796272533448158063}
   m_Layer: 0
   m_Name: "\u7B54\u9898\u6E38\u620F"
   m_TagString: Interactable
@@ -154,27 +153,6 @@ MonoBehaviour:
   interactionKey: 101
   hideCursorInitially: 1
   showCursorAfterInteraction: 1
---- !u!65 &1796272533448158063
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 464342565842463720}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.22843185, y: 1, z: 1}
-  m_Center: {x: -0.0108805895, y: 0, z: 0}
 --- !u!1 &558413904186479657
 GameObject:
   m_ObjectHideFlags: 0

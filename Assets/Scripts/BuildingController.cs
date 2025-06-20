@@ -58,6 +58,33 @@ if (爆炸 != null)
         
     }
 
+
+    private void Update()
+    {
+        if(BuildingManager.currentState != BuildingManager.BuildingState.空闲)
+        {
+            //将所有按钮禁用
+            disassembleButton.interactable = false;
+            reassembleButton.interactable = false;
+            reassembleButton_V.interactable = false;
+            垂直.interactable = false;
+            爆炸.interactable = false;
+            UseArh.interactable = false;
+            UseDirect.interactable = false;
+        }
+        else
+        {
+            //将所有按钮激活
+            disassembleButton.interactable = true;
+            reassembleButton.interactable = true;
+            reassembleButton_V.interactable = true;
+            垂直.interactable = true;
+            爆炸.interactable = true;
+            UseArh.interactable = true;
+            UseDirect.interactable = true;
+        }
+    }
+
     public void DisassembleBuilding()
     {
         if (buildingManager != null)

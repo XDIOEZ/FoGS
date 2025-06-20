@@ -134,6 +134,14 @@ public class Test_Game : MonoBehaviour
         currentDisplayObject.transform.localRotation = Quaternion.identity;
         currentDisplayObject.transform.localScale = Vector3.one;
 
+        //遍历所有子对象，将其 MeshCollider 组件禁用
+        foreach (Transform child in currentDisplayObject.transform)
+        {
+            child.GetComponent<MeshCollider>().enabled = false;
+        }
+        currentDisplayObject.GetComponent<MeshCollider>().enabled = false;
+
+
         // 自动居中调整
         CenterMesh(currentDisplayObject);
     }

@@ -18,7 +18,6 @@ public class ItemInfoPlane : MonoBehaviour
         instance = this;
         ChatWithAI.onClick.AddListener(ChatWithAIOnClick);
         CloseButton.onClick.AddListener(Hide);
-       
     }
 
     private void Start()

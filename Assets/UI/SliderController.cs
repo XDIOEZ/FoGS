@@ -19,11 +19,19 @@ public class SliderController : MonoBehaviour
     public ControlType controlType;
     private void Start()
     {
+        if (buildingManager == null)
+        {
+            buildingManager = FindObjectOfType<BuildingManager>();
+        }
+
         if (mySlider == null || buildingManager == null)
         {
             Debug.LogError("Slider 或 BuildingManager 未赋值！");
             return;
         }
+
+        
+
 
         // 添加监听事件
         mySlider.onValueChanged.AddListener(OnSliderValueChanged);
