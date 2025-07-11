@@ -74,7 +74,7 @@ if (爆炸 != null)
         }
         else
         {
-            //将所有按钮激活
+           //将所有按钮激活
             disassembleButton.interactable = true;
             reassembleButton.interactable = true;
             reassembleButton_V.interactable = true;
