@@ -20,6 +20,14 @@ public class ShowItemInfo : MonoBehaviour
         //显示AI对话框
         ItemInfoPlane.instance.Show();
         ItemInfoPlane.instance.SetBuildingItem(gameObject.GetComponent<BuildingItem>());
-        PlayerMouseLock.instance.UnlockCursor();
+        //检测Instance是否存在
+        if (PlayerMouseLock.instance == null)
+        {
+            Debug.Log("PlayerMouseLock.instance is null");
+            return;
+        }
+        //锁定鼠标
+        PlayerMouseLock.instance.LockCursor();
     }
 }
+
