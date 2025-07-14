@@ -22,8 +22,8 @@ public class AskAIProblem : MonoBehaviour
     private void AskProblem()
     {
         ChatUI.SetActive(true);
-       
-        PlayerMouseLock.instance.UnlockCursor();
+        PreInput.instance.Show();
+        //PlayerMouseLock.instance.UnlockCursor();
 
     }
 }
