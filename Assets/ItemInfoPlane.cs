@@ -26,6 +26,8 @@ public class ItemInfoPlane : MonoBehaviour
     }
     public void SetBuildingItem(BuildingItem buildingItem)
     {
+        if(this.buildingItem!= null)
+        this.buildingItem.GetComponent<m_Outline>().enabled = false;
         this.buildingItem = buildingItem;
         this.buildingName.text = buildingItem.itemData.name;
         buildingItem.GetComponent<m_Outline>().enabled = true;
