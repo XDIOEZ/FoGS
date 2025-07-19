@@ -129,7 +129,7 @@ public class BuildingManager : MonoBehaviour
         {
             item.animationDuration = reassembleDuration;
             item.normalizeDirection = normalizeDirection;
-          
+
 
             if (resetMode == ResetMode.Å×ÎïÏß)
             {
@@ -197,7 +197,7 @@ public class BuildingManager : MonoBehaviour
                 child.gameObject.AddComponent<ItemShader>();
             }
 
-            if(child.GetComponent<m_Outline>() == null)
+            if (child.GetComponent<m_Outline>() == null)
             {
                 child.gameObject.AddComponent<m_Outline>();
             }
@@ -230,10 +230,10 @@ public class BuildingManager : MonoBehaviour
     {
         for (int i = 0; i < buildingItems.Count; i++)
         {
-           
-            
-                buildingItems[i].gameObject.SetActive(true);
-            
+
+
+            buildingItems[i].gameObject.SetActive(true);
+
         }
     }
 
@@ -245,5 +245,4 @@ public class BuildingManager : MonoBehaviour
             buildingItems[i].gameObject.SetActive(false);
         }
     }
-
 }

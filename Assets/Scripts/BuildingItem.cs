@@ -1,5 +1,6 @@
 using UnityEngine;
 using DG.Tweening;
+using System;
 
 public class BuildingItem : MonoBehaviour
 {
@@ -133,6 +134,15 @@ public class BuildingItem : MonoBehaviour
         transform.DOScale(defaultScale, animationDuration).SetEase(Ease.InOutSine);
     }
 
+    internal void PauseAnimation()
+    {
+        throw new NotImplementedException();
+    }
+
+    internal void ResumeAnimation()
+    {
+        throw new NotImplementedException();
+    }
 }
 [System.Serializable]
 public class ItemData
