@@ -17,10 +17,10 @@ public class ShowItemInfo : MonoBehaviour
         {
             return;
         }
-        //显示AI对话框
+       // 显示AI对话框
         ItemInfoPlane.instance.Show();
         ItemInfoPlane.instance.SetBuildingItem(gameObject.GetComponent<BuildingItem>());
-        //检测Instance是否存在
+       // 检测Instance是否存在
         if (PlayerMouseLock.instance == null)
         {
             Debug.Log("PlayerMouseLock.instance is null");

@@ -49,6 +49,7 @@ public class BuildingManager : MonoBehaviour
     private void Start()
     {
         buildingItems.AddRange(GetComponentsInChildren<BuildingItem>());
+        currentState = BuildingState.¿ÕÏÐ;
     }
 
     [ContextMenu("²ð½â")]

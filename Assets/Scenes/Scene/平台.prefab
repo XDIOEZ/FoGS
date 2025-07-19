@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1626560547127530342}
   - component: {fileID: 7156671763821597306}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: "\u5E73\u53F0"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.0044164257, y: -0.999738, z: 0.011987041, w: 0.018993614}
   m_LocalPosition: {x: 79, y: 61.233597, z: 117.76958}
-  m_LocalScale: {x: 41.09784, y: 0.66058, z: 34.090717}
+  m_LocalScale: {x: 35.576344, y: 0.57183105, z: 33.53588}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
