@@ -7989,45 +7989,6 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 79.6
-        value: 0
-        inSlope: 1.5392714
-        outSlope: 1.5392714
-        tangentMode: 0
-        weightedMode: 2
-        inWeight: 0.33333334
-        outWeight: 0.10146332
-      - serializedVersion: 3
-        time: 81.6
-        value: 0.4105917
-        inSlope: 0.121686816
-        outSlope: 0.121686816
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.47523728
-        outWeight: 0.4031369
-      - serializedVersion: 3
-        time: 82.23333
-        value: 1
-        inSlope: 1.7184546
-        outSlope: 1.7184546
-        tangentMode: 0
-        weightedMode: 1
-        inWeight: 0.18232802
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: material._Float
-    path: Pivot/FX/HyperSpaceTunnel
-    classID: 23
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
         time: 0
         value: 1.41
         inSlope: 0
@@ -9155,6 +9116,45 @@ AnimationClip:
     attribute: m_LocalPosition.z
     path: Pivot/Logic/ActionCameraAim
     classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 79.6
+        value: 0
+        inSlope: 1.5392714
+        outSlope: 1.5392714
+        tangentMode: 0
+        weightedMode: 2
+        inWeight: 0.33333334
+        outWeight: 0.10146332
+      - serializedVersion: 3
+        time: 81.6
+        value: 0.4105917
+        inSlope: 0.121686816
+        outSlope: 0.121686816
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0.47523728
+        outWeight: 0.4031369
+      - serializedVersion: 3
+        time: 82.23333
+        value: 1
+        inSlope: 1.7184546
+        outSlope: 1.7184546
+        tangentMode: 0
+        weightedMode: 1
+        inWeight: 0.18232802
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: material._Float
+    path: Pivot/FX/HyperSpaceTunnel
+    classID: 23
     script: {fileID: 0}
     flags: 0
   m_EulerEditorCurves: []

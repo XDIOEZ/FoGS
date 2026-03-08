@@ -845,6 +845,7 @@ MonoBehaviour:
   NextButton: {fileID: 1237153276}
   ReferenceParent: {fileID: 0}
   ShowContainer: {fileID: 0}
+  QuestionShow: {fileID: 0}
   ScoreText: {fileID: 458008902}
   ShowAnswerDelay: 1.5
   DefaultColor: {r: 1, g: 1, b: 1, a: 1}

@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TerrainDemoScene.unity
     guid: eaa83a121bdd684498e770168ad34ba5
   - enabled: 1
-    path: Assets/Scenes/StartScene.unity
+    path: Assets/Scenes/Scene/StartScene.unity
     guid: b4903eb0cc63b2b4a8869f477ec7daf6
   - enabled: 1
     path: Assets/Scenes/Scene/Scene_1.unity
