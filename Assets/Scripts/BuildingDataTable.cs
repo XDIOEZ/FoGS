@@ -7,7 +7,7 @@ public class BuildingDataTable : MonoBehaviour
     public static Dictionary<string,string> buildingData = new Dictionary<string, string>();
     void Start()
     {
-        buildingData.Add("下昂一","一种利用重心转移与斜面嵌合原理的榫卯结构，受力时越压越紧，稳固牢靠，动中取固，工艺精妙。");
+        //buildingData.Add("下昂一","一种利用重心转移与斜面嵌合原理的榫卯结构，受力时越压越紧，稳固牢靠，动中取固，工艺精妙。");
         buildingData.Add("交互斗","斗拱系统中多个斗与拱在空间中相互咬合、层层递进，形成稳固的立体网络，兼具承重与抗震之效。");
         buildingData.Add("令拱","斗拱结构中斜向上挑的过渡构件，承托上部重量，令屋檐外展挺拔，刚柔相济，力学与美感并存。");
         buildingData.Add("平房","柱头与斗拱之间的连接构件，常带半驼峰与内槽设计，既缓冲传力又具装饰性，结构美学融合之作。");
