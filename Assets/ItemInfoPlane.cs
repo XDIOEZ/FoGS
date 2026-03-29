@@ -1,67 +1,106 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.UI;
 
 public class ItemInfoPlane : MonoBehaviour
 {
-    public static ItemInfoPlane instance;
-    public BuildingItem buildingItem;
-    public Text buildingName;
+    private static ItemInfoPlane _instance;
 
-    // ============ ĞÂÔö²¿·Ö ============
-    public Text descriptionText;        // ÃèÊöÎÄ±¾
-    public GameObject descriptionPanel; // ÃèÊöÃæ°å£¨°üº¬ÎÄ±¾µÄÕû¸öÃæ°å£©
-                                        // ==================================
-
-    public Button ChatWithAI;
-    public Button CloseButton;
-    public GameObject Panel;
-    public GameObject ChatUI;
+    public static ItemInfoPlane instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType<ItemInfoPlane>();
+            }
+            return _instance;
+        }
+    }
 
     private void Awake()
     {
-        instance = this;
+        // å¦‚æœæœ‰æ—§å®ä¾‹ï¼Œå…ˆé”€æ¯å®ƒ
+        if (_instance != null && _instance != this)
+        {
+            Destroy(_instance.gameObject);
+        }
+
+        _instance = this;
+
         ChatWithAI.onClick.AddListener(ChatWithAIOnClick);
         CloseButton.onClick.AddListener(Hide);
     }
 
+    private void OnDestroy()
+    {
+        if (_instance == this)
+        {
+            _instance = null;
+        }
+    }
+    public BuildingItem buildingItem;
+
+    [Header("UIç»„ä»¶")]
+    public Text buildingName;
+    public Text descriptionText;
+    public GameObject descriptionPanel;
+
+    [Header("æŒ‰é’®")]
+    public Button ChatWithAI;
+    public Button CloseButton;
+
+    [Header("é¢æ¿")]
+    public GameObject Panel;
+    public GameObject ChatUI;
+
+    
+
     private void Start()
     {
         Hide();
-        // È·±£ÃèÊöÃæ°å³õÊ¼ÊÇ¹Ø±ÕµÄ
         if (descriptionPanel != null)
             descriptionPanel.SetActive(false);
     }
 
     public void SetBuildingItem(BuildingItem buildingItem)
     {
-        if (this.buildingItem != null)
-            this.buildingItem.GetComponent<m_Outline>().enabled = false;
-
         this.buildingItem = buildingItem;
         this.buildingName.text = buildingItem.itemData.name;
-        buildingItem.GetComponent<m_Outline>().enabled = true;
 
-        // ============ ĞÂÔö²¿·Ö ============
-        // »ñÈ¡ÎïÌåÉÏµÄ ItemDescription ×é¼ş
-        ItemDescription itemDesc = buildingItem.GetComponent<ItemDescription>();
-        if (itemDesc != null && descriptionText != null)
+        // ğŸ”¥ ä½¿ç”¨ OutLineManager æ˜¾ç¤ºå”¯ä¸€å…‰æ ‡
+        if (OutLineManager.Instance != null)
         {
-            descriptionText.text = itemDesc.description;
+            OutLineManager.Instance.ShowOutline(buildingItem.gameObject);
         }
         else
         {
-            descriptionText.text = "ÔİÎŞÃèÊöĞÅÏ¢";
+            Debug.LogWarning("[ItemInfoPlane] OutLineManager.Instance ä¸ºç©ºï¼");
+            // é™çº§æ–¹æ¡ˆï¼šå¦‚æœæ²¡æœ‰ç®¡ç†å™¨ï¼Œç›´æ¥å¯ç”¨
+            var outline = buildingItem.GetComponent<m_Outline>();
+            if (outline != null) outline.enabled = true;
         }
-        // ==================================
-    }
 
-    void Update()
-    {
-        if (buildingItem != null)
-            buildingItem.GetComponent<m_Outline>().enabled = true;
+        // ============ ä»å­—å…¸è·å–æè¿° ============
+        if (BuildingDataTable.Instance != null && descriptionText != null)
+        {
+            string itemName = buildingItem.itemData.name;
+
+            // å¤„ç†å¸¦é—®å·çš„åç§°
+            if (itemName.Contains("?"))
+            {
+                itemName = itemName.Replace("?", "").Trim();
+            }
+
+            string description = BuildingDataTable.Instance.GetDescription(itemName);
+            descriptionText.text = description;
+        }
+        else
+        {
+            if (descriptionText != null)
+                descriptionText.text = "æš‚æ— è¯¦ç»†ä¿¡æ¯";
+        }
     }
+  
 
     void ChatWithAIOnClick()
     {
@@ -74,20 +113,25 @@ public class ItemInfoPlane : MonoBehaviour
     public void Show()
     {
         Panel.gameObject.SetActive(true);
-        // ============ ĞÂÔö²¿·Ö ============
         if (descriptionPanel != null)
             descriptionPanel.SetActive(true);
-        // ==================================
     }
 
     public void Hide()
     {
-        if (buildingItem != null)
-            buildingItem.GetComponent<m_Outline>().enabled = false;
+        // ğŸ”¥ å…³é—­é¢æ¿æ—¶éšè—è½®å»“
+        if (OutLineManager.Instance != null)
+        {
+            OutLineManager.Instance.HideAllOutlines();
+        }
+        else if (buildingItem != null)
+        {
+            var outline = buildingItem.GetComponent<m_Outline>();
+            if (outline != null) outline.enabled = false;
+        }
+
         Panel.gameObject.SetActive(false);
-        // ============ ĞÂÔö²¿·Ö ============
         if (descriptionPanel != null)
             descriptionPanel.SetActive(false);
-        // ==================================
     }
 }
